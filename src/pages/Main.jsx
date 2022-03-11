@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import InfiniteScroll from 'react-infinite-scroller'
 import getPeople from '../api/starwarsAPI/getPeople'
 import CustomMenuItem from '../components/starwars/CustomMenuItem'
@@ -10,12 +10,14 @@ import { HistoryContext } from '../context/historyContext/HistoryContext'
 
 const Main = () => {
     const { setBarActive } = useContext(HistoryContext)
-    setBarActive(false)
+
     const [page, setPage] = useState(1)
     const [more, setMore] = useState(true)
     const [people, setPeople] = useState([])
     const [error, setError] = useState(false)
-
+    useEffect(() => {
+        setBarActive(false)
+    }, [])
     const handleReload = () => {
         setPeople([])
         setError(false)
@@ -44,7 +46,7 @@ const Main = () => {
             <InfiniteScroll
                 loadMore={handleNext}
                 hasMore={more}
-                loader={<Loading />}
+                loader={<Loading key={1} />}
                 initialLoad={true}
                 threshold={50}
             >

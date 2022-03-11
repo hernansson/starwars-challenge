@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { swStyles } from './swStyles'
 import { Box, MenuItem, Typography, Divider } from '@mui/material'
@@ -10,10 +10,12 @@ import { capitalizeFirstLetter } from '../../utils/capitalizeFirstLetter'
 import { HistoryContext } from '../../context/historyContext/HistoryContext'
 const FullCharacterInfo = () => {
     const { setBarActive } = useContext(HistoryContext)
-    setBarActive(true)
+
     const { id } = useParams()
     const { execute, status, value, error } = useAsync(getPeopleById, id, true)
-
+    useEffect(() => {
+        setBarActive(true)
+    }, [])
     if (status == 'error') {
         return <FetchError handleReload={execute} error={error} />
     }
