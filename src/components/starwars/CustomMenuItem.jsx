@@ -23,8 +23,12 @@ const CustomMenuItem = ({ data }) => {
                     <Typography sx={swStyles.primaryText}>
                         {data.name}
                     </Typography>
-                    <Typography noWrap sx={swStyles.secondarytext}>
-                        {`${data.specie} from ${data.home} `}
+                    <Typography
+                        data-testid="test-specie-home"
+                        noWrap
+                        sx={swStyles.secondarytext}
+                    >
+                        {`${data.specie} from ${data.home}`}
                     </Typography>
                 </Box>
                 <ListItemIcon

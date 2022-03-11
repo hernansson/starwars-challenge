@@ -70,7 +70,7 @@ To get a local copy up and running follow these simple example steps.
 2. Clone the repo
 
 ```sh
-git clone
+git clone https://github.com/hernansson/starwars-challenge
 ```
 
 3. Navigate to 'react-calendar' folder

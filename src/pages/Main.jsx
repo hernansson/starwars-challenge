@@ -27,9 +27,6 @@ const Main = () => {
             if (data.next) {
                 setPeople([...people, ...data.results])
                 setPage(page + 1)
-                if (page === 3) {
-                    throw error
-                }
             } else {
                 setMore(false)
             }
