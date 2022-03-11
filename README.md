@@ -1,70 +1,117 @@
-# Getting Started with Create React App
+<div id="top"></div>
+<br />
+<div align="center" >
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">Hernan's Star wars App</h3>
 
-## Available Scripts
+  <p align="center">
+   Star wars App
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+    <ul>
+      <a href="#about-the-project">About The Project</a>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#considerations">Considerations</a></li>
+    </ul>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#commands">Commands</a></li>
+      </ul>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+</details>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- ABOUT THE PROJECT -->
 
-### `npm test`
+## About The Project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Star wars API Challenge
 
-### `npm run build`
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Built With
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [React.js](https://reactjs.org/) - Main
+- [Material-UI](https://mui.com/) - Styling/Functionality
+- [Prettier](https://prettier.io/) - Sexy Code ;)
+- [EsLint](https://eslint.org/) - Code Formatter
+- [React-Router](https://reactrouter.com/) - Multiple pages
+- [React-Context](https://reactjs.org) - Small-medium scale state management
+- [Axios](https://axios-http.com/docs/intro) - HTTP Requests
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### `npm run eject`
+### Considerations
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. As how the API works, it would be performance-wise to call all the request one time globally (in this case, context). But most of the time we should not do that. So I did the calls as if we have an ideal API
+2. It is needed to show city, and specie in the general list. For this to happen you need to make 3 request as the in the general request /people does not bring this info. Ideally, the general list should only show the data that we get from /people, and later go in details with each character.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p align="right">(<a href="#top">back to top</a>)</p>
+<!-- GETTING STARTED -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
-## Learn More
+### Prerequisites
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. You need to have node install in your PC (You can algo use Yarn)
+   https://nodejs.org/en/download/
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Installation
 
-### Code Splitting
+1. Open Terminal
+2. Clone the repo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```sh
+git clone
+```
 
-### Analyzing the Bundle Size
+3. Navigate to 'react-calendar' folder
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```sh
+  cd react-calendar
+```
 
-### Making a Progressive Web App
+4. Install NPM packages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```sh
+npm install
+```
 
-### Advanced Configuration
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Commands
 
-### Deployment
+1. Start Project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```sh
+  npm start
+```
 
-### `npm run build` fails to minify
+2. ESLint for consistency
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```sh
+  npm run lint
+```
+
+3. Prettier for making code sexier
+
+```sh
+  npm run prettier
+```
+
+4. Tests
+
+```sh
+  npm run test
+```
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+````
