@@ -1,16 +1,15 @@
-import Main from '../pages/Main'
-import Error from '../pages/Error'
-import FullCharacterInfo from '../components/starwars/FullCharacterInfo'
-
+import Error from '../../pages/Error'
+import CharacterPage from '../../pages/CharacterPage'
+import MainPage from '../../pages/MainPage/MainContainer'
 const Routes = [
     {
         path: '/',
-        component: <Main />,
+        component: <MainPage />,
         exact: true,
     },
     {
         path: '/character/:id',
-        component: <FullCharacterInfo />,
+        component: <CharacterPage />,
         exact: true,
     },
     {

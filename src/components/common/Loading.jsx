@@ -1,5 +1,5 @@
 import React from 'react'
-import { swStyles } from './swStyles'
+import { swStyles } from '../../pages/CharacterPage/swStyles'
 import { Typography, Box } from '@mui/material'
 import CircularProgress from '@mui/material/CircularProgress'
 const Loading = () => {

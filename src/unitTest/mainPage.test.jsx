@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { HistoryContext } from '../context/historyContext/HistoryContext'
-import CustomMenuItem from '../components/starwars/CustomMenuItem'
+import CustomMenuItem from '../components/common/CustomMenuItem'
 import { MemoryRouter } from 'react-router-dom'
 
 test('Character renders in list', () => {

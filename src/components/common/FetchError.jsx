@@ -1,5 +1,5 @@
 import React from 'react'
-import { swStyles } from './swStyles'
+import { swStyles } from '../../pages/CharacterPage/swStyles'
 import { Box, Typography, IconButton } from '@mui/material'
 import RefreshIcon from '@mui/icons-material/Refresh'
 const FetchError = ({ handleReload }) => {

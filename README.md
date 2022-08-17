@@ -36,20 +36,22 @@ Star wars API Challenge
 
 ### Built With
 
-- [React.js](https://reactjs.org/) - Main
-- [Material-UI](https://mui.com/) - Styling/Functionality
-- [Prettier](https://prettier.io/) - Sexy Code ;)
-- [EsLint](https://eslint.org/) - Code Formatter
-- [React-Router](https://reactrouter.com/) - Multiple pages
-- [React-Context](https://reactjs.org) - Small-medium scale state management
-- [Axios](https://axios-http.com/docs/intro) - HTTP Requests
+-   [React.js](https://reactjs.org/) - Main
+-   [Material-UI](https://mui.com/) - Styling/Functionality
+-   [Prettier](https://prettier.io/) - Sexy Code ;)
+-   [EsLint](https://eslint.org/) - Code Formatter
+-   [React-Router](https://reactrouter.com/) - Multiple pages
+-   [React-Context](https://reactjs.org) - Small-medium scale state management
+-   [Axios](https://axios-http.com/docs/intro) - HTTP Requests
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Considerations
 
-1. As how the API works, it would be performance-wise to call all the request one time globally (in this case, context). But most of the time we should not do that. So I did the calls as if we have an ideal API
-2. It is needed to show city, and specie in the general list. For this to happen you need to make 3 request as the in the general request /people does not bring this info. Ideally, the general list should only show the data that we get from /people, and later go in details with each character.
+1. This data fetching would ideally be done with GraphQL, and so implementing NextJs for SSR would be the best path.
+2. This could be done in NextJs and typeScript for better practices. in case of Next changing the routing part would be enough as other components will work. Typescripting would take a bit longer, but easy to achieve.
+3. It is needed to show city, and specie in the general list. For this to happen you need to make 3 request as the in the general request /people does not bring this info. Ideally, the general list should only show the data that we get from /people, and later go in details with each character.
+4. As we consume a public API, no need for .env or managing permissions with cookies.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 <!-- GETTING STARTED -->
