@@ -1,6 +1,6 @@
 import Error from '../../pages/Error'
 import CharacterPage from '../../pages/CharacterPage'
-import MainPage from '../../pages/MainPage/MainContainer'
+import MainPage from '../../pages/MainPage'
 const Routes = [
     {
         path: '/',

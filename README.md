@@ -50,7 +50,7 @@ Star wars API Challenge
 
 1. This data fetching would ideally be done with GraphQL, and so implementing NextJs for SSR would be the best path.
 2. This could be done in NextJs and typeScript for better practices. in case of Next changing the routing part would be enough as other components will work. Typescripting would take a bit longer, but easy to achieve.
-3. It is needed to show city, and specie in the general list. For this to happen you need to make 3 request as the in the general request /people does not bring this info. Ideally, the general list should only show the data that we get from /people, and later go in details with each character.
+3. PrivateRoutes may have additional functionality, just put thewre to show some code structuring knowledge.
 4. As we consume a public API, no need for .env or managing permissions with cookies.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
